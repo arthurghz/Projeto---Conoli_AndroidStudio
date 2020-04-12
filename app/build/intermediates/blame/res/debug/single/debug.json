@@ -1,0 +1,146 @@
+[
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_autor.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\layout\\fragment_autor.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_side_nav_bar.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_main.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\layout\\app_bar_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_left.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\anim\\slide_in_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_mail.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\layout\\fragment_mail.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_biografia.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\layout\\fragment_biografia.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_slideshow.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\drawable\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_mensagem.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\drawable\\ic_menu_mensagem.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_home.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\drawable\\ic_menu_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\menu_activity_main_drawer.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_right.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\anim\\slide_out_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_perfil1.jpg.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\drawable\\perfil1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_main.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_main.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\layout\\content_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\menu_main.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_perfil2.jpg.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\drawable\\perfil2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_right.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\anim\\slide_in_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_group.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\drawable\\ic_menu_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_left.xml.flat",
+        "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\anim\\slide_out_left.xml"
+    }
+]
