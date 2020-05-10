@@ -1,8 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "C:\\Users\\jeane\\AndroidStudioProjects\\projetoConoli\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\jeane\\AndroidStudioProjects\\projetoConoli\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "19",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "246"
+                    },
+                    "to": {
+                        "startLines": "16",
+                        "startColumns": "4",
+                        "startOffsets": "1201",
+                        "endLines": "20",
+                        "endColumns": "12",
+                        "endOffsets": "1424"
+                    }
+                },
                 {
                     "source": "C:\\Users\\jeane\\.gradle\\caches\\transforms-2\\files-2.1\\1cd7eff88f5e86d0249af2958bf465f0\\core-1.1.0\\res\\values-v21\\values-v21.xml",
                     "from": {
@@ -77,25 +96,6 @@
                         "endLines": "312,315,319,323",
                         "endColumns": "12,12,12,12",
                         "endOffsets": "23056,23219,23513,23808"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\jeane\\AndroidStudioProjects\\aula04_inicioProjeto\\app\\src\\main\\res\\values-v21\\styles.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "19",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "246"
-                    },
-                    "to": {
-                        "startLines": "16",
-                        "startColumns": "4",
-                        "startOffsets": "1201",
-                        "endLines": "20",
-                        "endColumns": "12",
-                        "endOffsets": "1424"
                     }
                 }
             ]
