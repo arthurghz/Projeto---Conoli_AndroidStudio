@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="br.unicamp.ft.a213281_j199617.aula04_inicioprojeto.ui.home.HomeFragment"
+        android:name="br.unicamp.ft.a213281_j199617.projetoconoli.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home">
 
@@ -17,39 +17,26 @@
     </fragment>
     <fragment
         android:id="@+id/nav_home_second"
-        android:name="br.unicamp.ft.a213281_j199617.aula04_inicioprojeto.ui.home.HomeSecondFragment"
+        android:name="br.unicamp.ft.a213281_j199617.projetoconoli.ui.home.HomeSecondFragment"
         android:label="@string/home_second"
         tools:layout="@layout/fragment_home_second">
         <action
             android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
-            app:destination="@id/nav_home"
-            />
+            app:destination="@id/nav_home" />
 
         <argument
             android:name="myArg"
             app:argType="string" />
     </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="br.unicamp.ft.a213281_j199617.projetoconoli.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
     <fragment
         android:id="@+id/biografiaFragment"
-        android:name="br.unicamp.ft.a213281_j199617.aula04_inicioprojeto.BiografiaFragment"
-        android:label="Biografia da dupla"
-        tools:layout="@layout/fragment_biografia" />
-    <fragment
-        android:id="@+id/autorFragment"
-        android:name="br.unicamp.ft.a213281_j199617.aula04_inicioprojeto.AutorFragment"
-        android:label="Sobre nós"
-        tools:layout="@layout/fragment_autor" />
-    <fragment
-        android:id="@+id/mailFragment"
-        android:name="br.unicamp.ft.a213281_j199617.aula04_inicioprojeto.MailFragment"
-        android:label="fragment_mail"
-        tools:layout="@layout/fragment_mail" >
-        <action
-            android:id="@+id/minhaAresta"
-            app:destination="@id/autorFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
-    </fragment>
+        android:name="br.unicamp.ft.a213281_j199617.projetoconoli.BiografiaFragment"
+        android:label="Sobre nós" />
+
 </navigation>
