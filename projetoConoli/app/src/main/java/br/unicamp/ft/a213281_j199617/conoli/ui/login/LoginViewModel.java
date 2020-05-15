@@ -1,4 +1,4 @@
-package br.unicamp.ft.a213281_j199617.projetoconoli.ui.login;
+package br.unicamp.ft.a213281_j199617.conoli.ui.login;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -6,10 +6,10 @@ import androidx.lifecycle.ViewModel;
 
 import android.util.Patterns;
 
-import br.unicamp.ft.a213281_j199617.projetoconoli.data.LoginRepository;
-import br.unicamp.ft.a213281_j199617.projetoconoli.data.Result;
-import br.unicamp.ft.a213281_j199617.projetoconoli.data.model.LoggedInUser;
-import br.unicamp.ft.a213281_j199617.projetoconoli.R;
+import br.unicamp.ft.a213281_j199617.conoli.data.LoginRepository;
+import br.unicamp.ft.a213281_j199617.conoli.data.Result;
+import br.unicamp.ft.a213281_j199617.conoli.data.model.LoggedInUser;
+import br.unicamp.ft.a213281_j199617.conoli.R;
 
 public class LoginViewModel extends ViewModel {
 

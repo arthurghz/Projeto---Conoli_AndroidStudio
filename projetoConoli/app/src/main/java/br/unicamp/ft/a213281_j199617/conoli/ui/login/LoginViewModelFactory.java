@@ -1,11 +1,11 @@
-package br.unicamp.ft.a213281_j199617.projetoconoli.ui.login;
+package br.unicamp.ft.a213281_j199617.conoli.ui.login;
 
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.annotation.NonNull;
 
-import br.unicamp.ft.a213281_j199617.projetoconoli.data.LoginDataSource;
-import br.unicamp.ft.a213281_j199617.projetoconoli.data.LoginRepository;
+import br.unicamp.ft.a213281_j199617.conoli.data.LoginDataSource;
+import br.unicamp.ft.a213281_j199617.conoli.data.LoginRepository;
 
 /**
  * ViewModel provider factory to instantiate LoginViewModel.

@@ -1,5 +1,6 @@
-package br.unicamp.ft.a213281_j199617.projetoconoli;
+package br.unicamp.ft.a213281_j199617.conoli;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -20,7 +21,7 @@ public class login extends AppCompatActivity {
 
     private Spinner spinner;
     private EditText editText;
-    FirebaseAuth mAuth;
+
     EditText numero;
     EditText dd;
     String codeSent;
@@ -30,7 +31,7 @@ public class login extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        final FirebaseAuth mAuth;
         mAuth = FirebaseAuth.getInstance();
         dd = findViewById(R.id.codigo_area);
         numero = findViewById(R.id.numberphone);
@@ -40,6 +41,11 @@ public class login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 sendVerificationcode();
+                Intent intent1 = new Intent(getApplicationContext(), sms_receiver.class);
+                Log.i(codeSent,"codigo");
+                intent1.putExtra("Auth", (FirebaseAuth)mAuth );
+                intent1.putExtra("Codesent", codeSent);
+                startActivity(intent1);
             }
         });
 
@@ -51,13 +57,11 @@ public class login extends AppCompatActivity {
         Log.i(phone, "Celular");
         if(phone.isEmpty()){
             numero.setError("BOTA O NUMERO POHA");
-            numero.requestFocus();
             return;
         }
 
-        if(phone.length() < 10 ){
+        if(phone.length() < 9 ){
             numero.setError("COLOCA CERTO KRLH0");
-            numero.requestFocus();
             return;
         }
 
@@ -67,8 +71,10 @@ public class login extends AppCompatActivity {
                 60,                 // Timeout duration
                 TimeUnit.SECONDS,   // Unit of timeout
                 this,               // Activity (for callback binding)
-                mCallbacks);        // OnVerificationStateChangedCallbacks
-    };
+                mCallbacks );   // OnVerificationStateChangedCallbacks
+
+
+    }
 
     PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
 
@@ -78,31 +84,16 @@ public class login extends AppCompatActivity {
         }
 
         @Override
-        public void onVerificationFailed(@NonNull FirebaseException e) {
+        public void onVerificationFailed(FirebaseException e) {
 
         }
-        PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
 
-            @Override
-            public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
-
-            }
-
-            @Override
-            public void onVerificationFailed(FirebaseException e) {
-
-            }
-
-            @Override
-            public void onCodeSent(String s, PhoneAuthProvider.ForceResendingToken forceResendingToken) {
-                super.onCodeSent(s, forceResendingToken);
-
-                codeSent = s;
-            }
-        };
-
-
-
+        @Override
+        public void onCodeSent(String s, PhoneAuthProvider.ForceResendingToken forceResendingToken) {
+            super.onCodeSent(s, forceResendingToken);
+            codeSent = s;
+        }
     };
+};
 
-}
+

@@ -1,4 +1,4 @@
-package br.unicamp.ft.a213281_j199617.projetoconoli;
+package br.unicamp.ft.a213281_j199617.conoli;
 
 import org.junit.Test;
 

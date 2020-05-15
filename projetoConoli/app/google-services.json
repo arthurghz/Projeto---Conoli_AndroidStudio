@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "1018274780983",
-    "firebase_url": "https://fooo-80549.firebaseio.com",
-    "project_id": "fooo-80549",
-    "storage_bucket": "fooo-80549.appspot.com"
+    "project_number": "844781537478",
+    "firebase_url": "https://ravioli-b1d89.firebaseio.com",
+    "project_id": "ravioli-b1d89",
+    "storage_bucket": "ravioli-b1d89.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1018274780983:android:b406b40b692fa53586acb2",
+        "mobilesdk_app_id": "1:844781537478:android:cafe7ec10906dda3292fc7",
         "android_client_info": {
-          "package_name": "br.unicamp.ft.a213281_j199617.projetoconoli"
+          "package_name": "br.unicamp.ft.a213281_j199617.conoli"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1018274780983-2pvrl3j024mfpgo07p09krd9liosjb8j.apps.googleusercontent.com",
+          "client_id": "844781537478-4onevk2052ehf96md99om6dogrehdhfe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.unicamp.ft.a213281_j199617.conoli",
+            "certificate_hash": "b15ec72bdc147c00c1349c83d2a3ce3d49f9d1d9"
+          }
+        },
+        {
+          "client_id": "844781537478-b40ss82ir0esminsfq2lu0ith50tsloe.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDybsoz0nSucNGtvBQR35aCfjr10bT8RgA"
+          "current_key": "AIzaSyCghlo9Ed_DmSjrLVi9HlAMobXGy_EoVD4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1018274780983-2pvrl3j024mfpgo07p09krd9liosjb8j.apps.googleusercontent.com",
+              "client_id": "844781537478-b40ss82ir0esminsfq2lu0ith50tsloe.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

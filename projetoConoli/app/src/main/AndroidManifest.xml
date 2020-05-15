@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.unicamp.ft.a213281_j199617.projetoconoli">
+    package="br.unicamp.ft.a213281_j199617.conoli">
 
     <application
         android:allowBackup="true"
@@ -9,19 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".sms_receiver"></activity>
+        <activity android:name="br.unicamp.ft.a213281_j199617.conoli.sms_receiver"></activity>
         <activity android:name=".checar_sms" />
         <activity android:name=".verifysms" />
-        <activity android:name=".login" />
+        <activity android:name="br.unicamp.ft.a213281_j199617.conoli.login" />
         <activity android:name=".ui.Login" />
         <activity
             android:name=".ui.LoginActivity"
             android:label="@string/title_activity_login" />
         <activity
-            android:name=".navigationDrawer"
+            android:name="br.unicamp.ft.a213281_j199617.conoli.navigationDrawer"
             android:label="@string/title_activity_navigation_drawer"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity">
+        <activity android:name="br.unicamp.ft.a213281_j199617.conoli.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

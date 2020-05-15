@@ -1,4 +1,4 @@
-package br.unicamp.ft.a213281_j199617.projetoconoli.data;
+package br.unicamp.ft.a213281_j199617.conoli.data;
 
 /**
  * A generic class that holds a result success w/ data or an error exception.

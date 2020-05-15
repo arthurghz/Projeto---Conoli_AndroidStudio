@@ -6,7 +6,7 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "br.unicamp.ft.a213281_j199617.projetoconoli"
+        applicationId "br.unicamp.ft.a213281_j199617.conoli"
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
@@ -44,6 +44,6 @@ dependencies {
 
 buildscript {
     dependencies {
-
+     
     }
 }

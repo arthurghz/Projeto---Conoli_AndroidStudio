@@ -1,4 +1,4 @@
-package br.unicamp.ft.a213281_j199617.projetoconoli.ui.gallery;
+package br.unicamp.ft.a213281_j199617.conoli.ui.gallery;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

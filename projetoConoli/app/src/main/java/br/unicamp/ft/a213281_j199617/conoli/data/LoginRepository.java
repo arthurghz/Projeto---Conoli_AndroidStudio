@@ -1,6 +1,6 @@
-package br.unicamp.ft.a213281_j199617.projetoconoli.data;
+package br.unicamp.ft.a213281_j199617.conoli.data;
 
-import br.unicamp.ft.a213281_j199617.projetoconoli.data.model.LoggedInUser;
+import br.unicamp.ft.a213281_j199617.conoli.data.model.LoggedInUser;
 
 /**
  * Class that requests authentication and user information from the remote data source and
