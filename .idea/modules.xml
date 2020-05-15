@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Projeto---Conoli_AndroidStudio.iml" filepath="$PROJECT_DIR$/Projeto---Conoli_AndroidStudio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Projeto---Conoli_AndroidStudio.iml" filepath="$PROJECT_DIR$/Projeto---Conoli_AndroidStudio.iml" group="Projeto---Conoli_AndroidStudio" />
     </modules>
   </component>
 </project>

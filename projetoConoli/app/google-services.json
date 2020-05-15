@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "941549124202",
-    "firebase_url": "https://projetoconoli.firebaseio.com",
-    "project_id": "projetoconoli",
-    "storage_bucket": "projetoconoli.appspot.com"
+    "project_number": "1018274780983",
+    "firebase_url": "https://fooo-80549.firebaseio.com",
+    "project_id": "fooo-80549",
+    "storage_bucket": "fooo-80549.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:941549124202:android:265f22ffbe17fbf6046813",
+        "mobilesdk_app_id": "1:1018274780983:android:b406b40b692fa53586acb2",
         "android_client_info": {
           "package_name": "br.unicamp.ft.a213281_j199617.projetoconoli"
         }
       },
       "oauth_client": [
         {
-          "client_id": "941549124202-qb2epmuq8bf7dfulffb4r7l41bkqop4b.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "br.unicamp.ft.a213281_j199617.projetoconoli",
-            "certificate_hash": "b15ec72bdc147c00c1349c83d2a3ce3d49f9d1d9"
-          }
-        },
-        {
-          "client_id": "941549124202-pf81o729une5ira014i3r6r5m106rcts.apps.googleusercontent.com",
+          "client_id": "1018274780983-2pvrl3j024mfpgo07p09krd9liosjb8j.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAEjwkDX1ZHcVeDLkI-lxAUl1zQFg4B1SY"
+          "current_key": "AIzaSyDybsoz0nSucNGtvBQR35aCfjr10bT8RgA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "941549124202-pf81o729une5ira014i3r6r5m106rcts.apps.googleusercontent.com",
+              "client_id": "1018274780983-2pvrl3j024mfpgo07p09krd9liosjb8j.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
