@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="br.unicamp.ft.a213281_j199617.conoli.sms_receiver"></activity>
         <activity android:name=".checar_sms" />
         <activity android:name=".verifysms" />
         <activity android:name="br.unicamp.ft.a213281_j199617.conoli.login" />

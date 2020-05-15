@@ -54,7 +54,7 @@
             android:layout_below="@+id/started"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Enviaremos um SMS para o seu número de telefone."
+            android:text=" Enviaremos um SMS para o seu número de telefone.\nTarifas de SMS de sua operadora podem ser aplicadas"
             android:textColor="@color/colorPrimary" />
 
 
@@ -76,7 +76,7 @@
             android:layout_marginLeft="50dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView"
-            android:layout_marginTop="37dp"
+            android:layout_marginTop="10dp"
             android:digits="0123456789"
             android:drawablePadding="10dp"
             android:hint="Digite aqui com  DDD"
@@ -88,12 +88,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView"
-            android:layout_marginTop="37dp"
+            android:layout_marginTop="10dp"
             android:digits="0987654321"
             android:drawablePadding="10dp"
             android:hint="DD"
             android:inputType="phone"
-            android:maxLength="10"
+            android:maxLength="2"
             />
 
         <Button
@@ -102,7 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/numberphone"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:background="@color/colorPrimaryDark"
             android:text="Continue"
             android:textAllCaps="false"
@@ -113,10 +113,35 @@
             android:layout_width="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/requisitar"
-            android:layout_marginTop="50dp"
-            android:text="Tarifas de SMS de sua operadora podem ser aplicadas"
+            android:layout_marginTop="10dp"
+            android:text="Digite o código recebido abaixo."
             android:layout_height="wrap_content"
             android:hint="adsadsadasda"/>
+
+        <EditText
+            android:id="@+id/codeverify"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tarifa"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:digits="0123456789"
+            android:drawablePadding="10dp"
+            android:hint="Por favor, digite"
+            android:inputType="phone"
+            android:maxLength="10" />
+        <Button
+            android:id="@+id/verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/codeverify"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#cdd8f1" />
+
 
     </RelativeLayout>
 
