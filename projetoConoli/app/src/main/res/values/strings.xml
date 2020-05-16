@@ -36,6 +36,14 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="slogan">O aplicativo que te ajuda a encontrar e, ou, divulgar seu imóvel ;)</string>
+    <string name="welcome_message">Que bom ter você por aqui!</string>
+    <string name="welcome_register">Vamos começar com seu cadastro, ok?</string>
+    <string name="welcome_instructions">Enviaremos um SMS para o seu número de telefone. Tarifas de SMS de sua operadora podem ser aplicadas</string>
+    <string name="register_numer">Continuar</string>
+    <string name="about_us">Sobre os criadores</string>
+    <string name="nome_cadastro">Cadastre um imóvel</string>
+    <string name="nome_tipo_de_administracao">Administração do imóvel</string>
+    <string name="nome_tipo_do_imovel">Tipo do imóvel</string>
 
 
     <string-array name="ddd">

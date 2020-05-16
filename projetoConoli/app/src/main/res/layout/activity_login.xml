@@ -1,33 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login">
+    tools:context=".login"
+    android:orientation="vertical">
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="152dp"
+        android:gravity="center"
         android:background="@color/colorPrimary"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="260dp"
+            android:layout_height="76dp"
             android:layout_centerInParent="true"
-            android:background="@drawable/ic_icon_logo" />
+            android:background="@drawable/ic_logo_conoli_texto" />
 
-    </RelativeLayout>
-
+    </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="200dp"
         android:orientation="vertical"
+        android:gravity="center"
         android:padding="20dp">
 
         <TextView
@@ -35,8 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="25dp"
-            android:text="Novamente, seja bem vindo ! "
+            android:text="@string/welcome_message"
             android:textColor="@color/colorPrimary" />
 
         <TextView
@@ -45,7 +45,7 @@
             android:layout_below="@+id/welcome"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Vamos começar com seu Cadastro!"
+            android:text="@string/welcome_register"
             android:textColor="@color/colorPrimary" />
 
         <TextView
@@ -53,8 +53,8 @@
             android:layout_width="wrap_content"
             android:layout_below="@+id/started"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:text=" Enviaremos um SMS para o seu número de telefone.\nTarifas de SMS de sua operadora podem ser aplicadas"
+            android:gravity="center"
+            android:text="@string/welcome_instructions"
             android:textColor="@color/colorPrimary" />
 
 
@@ -66,7 +66,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
             android:text="Qual seu número de Telefone?"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textSize="22sp"
             android:textColor="@color/colorPrimary" />
 
 
@@ -104,7 +104,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:background="@color/colorPrimaryDark"
-            android:text="Continue"
+            android:text="@string/register_numer"
             android:textAllCaps="false"
             android:textColor="#cdd8f1" />
 
@@ -113,10 +113,11 @@
             android:layout_width="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/requisitar"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:text="Digite o código recebido abaixo."
+            android:textSize="18sp"
             android:layout_height="wrap_content"
-            android:hint="adsadsadasda"/>
+            android:textColor="@color/colorPrimary"/>
 
         <EditText
             android:id="@+id/codeverify"
@@ -136,7 +137,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/codeverify"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:background="@color/colorPrimaryDark"
             android:text="Login"
             android:textAllCaps="false"
@@ -145,4 +146,4 @@
 
     </RelativeLayout>
 
-</RelativeLayout>
+</LinearLayout>
