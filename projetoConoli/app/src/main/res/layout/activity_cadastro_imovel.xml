@@ -1,91 +1,443 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    tools:context=".cadastro_imovel">
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:stretchColumns="1">
 
-
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="90dp"
         android:orientation="horizontal"
         android:background="@color/colorPrimary"
         android:gravity="center">
 
-
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_logo_conoli" />
-
-        <Space
-            android:layout_width="15dp"
-            android:layout_height="wrap_content"/>
+            android:src="@drawable/ic_logo_conoli"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.897"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/nome_cadastro"
+            android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/white"
-            android:text="@string/nome_cadastro"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.558"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.507" />
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <LinearLayout
-            android:layout_height="match_parent"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:paddingLeft="20dp"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
 
             <TextView
-                android:text="@string/nome_tipo_de_administracao"
-                android:layout_width="match_parent"
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:paddingTop="16dp"
+                android:text="@string/nome_tipo_de_administracao"
+                android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                android:textColor="@color/black"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:id="@+id/radioGroup"
+                android:layout_width="0sp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                app:layout_constraintDimensionRatio="560:277">
 
-                    <RadioButton
-                        android:button="@android:color/transparent"
-                        android:layout_width="170dp"
-                        android:layout_height="170dp"
-                        android:background="@drawable/ic_radiobutton_imobiliaria"/>
+                <RadioButton
+                    android:id="@+id/radio_imobiliaria"
+                    android:tag="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:background="@drawable/style_administracao_imobiliaria"
+                    android:button="@android:color/transparent"
+                    android:checked="true" />
 
-                    <Space
-                        android:layout_width="25dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weigh="1"/>
-
-                    <RadioButton
-                        android:button="@android:color/transparent"
-                        android:layout_width="170dp"
-                        android:layout_height="170dp"
-                        android:background="@drawable/ic_radiobutton_particular" />
+                <RadioButton
+                    android:id="@+id/radio_particular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/style_administracao_particular"
+                    android:button="@android:color/transparent" />
 
             </RadioGroup>
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
             <TextView
-                android:text="@string/nome_tipo_do_imovel"
-                android:layout_width="match_parent"
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:paddingTop="16dp"
+                android:text="@string/nome_tipo_do_imovel"
+                android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                android:textColor="@color/black"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
 
-        </LinearLayout>
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="0sp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                app:layout_constraintDimensionRatio="500:75">
+
+                <RadioButton
+                    android:id="@+id/radio_casa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_tipo_casa"
+                    android:button="@android:color/transparent"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/radio_apartamento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/style_tipo_apartamento"
+                    android:button="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/radio_kitnet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/style_tipo_kitnet"
+                    android:button="@android:color/transparent" />
+
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <TextView
+                android:id="@+id/textView_tipoDaVaga"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:paddingTop="16dp"
+                android:text="@string/nome_tipo_da_vaga"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <RadioGroup
+                android:layout_width="0sp"
+                android:layout_height="0sp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="40:12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_tipoDaVaga">
+
+                <RadioButton
+                    android:id="@+id/radio_individual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/style_tipo_individual"
+                    android:button="@android:color/transparent"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radio_compartilhado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight=".4"
+                    android:background="@drawable/style_tipo_compartilhado"
+                    android:button="@android:color/transparent" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.8"/>
+
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <TextView
+                android:id="@+id/textView_preco"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:paddingTop="16dp"
+                android:text="@string/preco"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/currency"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/preco"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_preco" />
+
+            <EditText
+                android:id="@+id/preco"
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:digits="0123456789,"
+                android:drawablePadding="10dp"
+                android:layout_marginStart="5dp"
+                android:hint="@string/preco"
+                android:inputType="numberDecimal"
+                android:maxLength="7"
+                app:layout_constraintStart_toEndOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/textView_preco" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="25dp">
+
+            <TextView
+                android:id="@+id/textView_itensExtras"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:paddingTop="16dp"
+                android:text="@string/itens_acompanhantes"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox_geladeira"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ic_checkbox_geladeira"
+                android:button="@android:color/transparent"
+                android:layout_margin="10dp"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintEnd_toStartOf="@id/checkBox_maquinadelavar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView_itensExtras"
+                app:layout_constraintBottom_toTopOf="@id/checkBox_microondas"/>
+
+            <CheckBox
+                android:id="@+id/checkBox_maquinadelavar"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ic_checkbox_maquinadelavar"
+                android:button="@android:color/transparent"
+                android:layout_margin="10dp"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintEnd_toStartOf="@id/checkBox_fogao"
+                app:layout_constraintStart_toEndOf="@id/checkBox_geladeira"
+                app:layout_constraintTop_toBottomOf="@id/textView_itensExtras"
+                app:layout_constraintBottom_toTopOf="@id/checkBox_televisao" />
+
+            <CheckBox
+                android:id="@+id/checkBox_fogao"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ic_checkbox_fogao"
+                android:button="@android:color/transparent"
+                android:layout_margin="10dp"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/checkBox_maquinadelavar"
+                app:layout_constraintTop_toBottomOf="@id/textView_itensExtras"
+                app:layout_constraintBottom_toTopOf="@id/checkBox_wifi" />
+
+            <CheckBox
+                android:id="@+id/checkBox_microondas"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ic_checkbox_microondas"
+                android:button="@android:color/transparent"
+                android:layout_margin="10dp"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toBottomOf="@id/checkBox_geladeira"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/checkBox_televisao"/>
+
+            <CheckBox
+                android:id="@+id/checkBox_televisao"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ic_checkbox_tv"
+                android:button="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toBottomOf="@id/checkBox_maquinadelavar"
+                app:layout_constraintEnd_toStartOf="@id/checkBox_wifi"
+                app:layout_constraintStart_toEndOf="@id/checkBox_microondas" />
+
+            <CheckBox
+                android:id="@+id/checkBox_wifi"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ic_checkbox_wifi"
+                android:button="@android:color/transparent"
+                android:layout_margin="10dp"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toBottomOf="@id/checkBox_fogao"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/checkBox_televisao"/>
+
+            <CheckBox
+                android:id="@+id/checkBox_garagem"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ic_checkbox_garagem"
+                android:button="@android:color/transparent"
+                android:layout_margin="10dp"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toBottomOf="@id/checkBox_microondas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/checkBox_mobilia"/>
+
+            <CheckBox
+                android:id="@+id/checkBox_mobilia"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ic_checkbox_mobilia"
+                android:button="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toBottomOf="@id/checkBox_televisao"
+                app:layout_constraintEnd_toStartOf="@id/checkBox_utensilio"
+                app:layout_constraintStart_toEndOf="@id/checkBox_garagem" />
+
+            <CheckBox
+                android:id="@+id/checkBox_utensilio"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ic_checkbox_utensilios"
+                android:button="@android:color/transparent"
+                android:layout_margin="10dp"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toBottomOf="@id/checkBox_wifi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/checkBox_mobilia"/>
+
+            <CheckBox
+                android:id="@+id/checkBox_interfone"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ic_checkbox_interfone"
+                android:button="@android:color/transparent"
+                android:layout_margin="10dp"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toBottomOf="@id/checkBox_garagem"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/checkBox_arcondicionado"/>
+
+            <CheckBox
+                android:id="@+id/checkBox_arcondicionado"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ic_checkbox_arcondicionado"
+                android:button="@android:color/transparent"
+                android:layout_margin="10dp"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toBottomOf="@id/checkBox_mobilia"
+                app:layout_constraintEnd_toStartOf="@id/checkBox_varanda"
+                app:layout_constraintStart_toEndOf="@id/checkBox_interfone" />
+
+            <CheckBox
+                android:id="@+id/checkBox_varanda"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ic_checkbox_varanda"
+                android:button="@android:color/transparent"
+                android:layout_margin="10dp"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toBottomOf="@id/checkBox_utensilio"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/checkBox_arcondicionado"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     </TableLayout>
 

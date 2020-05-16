@@ -44,6 +44,11 @@
     <string name="nome_cadastro">Cadastre um imóvel</string>
     <string name="nome_tipo_de_administracao">Administração do imóvel</string>
     <string name="nome_tipo_do_imovel">Tipo do imóvel</string>
+    <string name="nome_tipo_da_vaga">Tipo da vaga</string>
+    <string name="nome_preco">Preço</string>
+    <string name="preco">Insira o valor da vaga</string>
+    <string name="currency">R$</string>
+    <string name="itens_acompanhantes">Itens que acompanham a vaga</string>
 
 
     <string-array name="ddd">
