@@ -6,7 +6,7 @@
     </item>
 
     <item android:state_checked="true"
-        android:drawable="@drawable/ic_radiobutton_compartilhado_checked">
+        android:drawable="@drawable/ic_radiobutton_comartilhado_checked">
     </item>
 
 </selector>

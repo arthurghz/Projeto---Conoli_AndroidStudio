@@ -35,7 +35,7 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="slogan">O aplicativo que te ajuda a encontrar e, ou, divulgar seu imóvel ;)</string>
+    <string name="slogan">O aplicativo feito por estudantes e para estudantes universitários que busca facilitar a forma de oferta e busca de moradias ;)</string>
     <string name="welcome_message">Que bom ter você por aqui!</string>
     <string name="welcome_register">Vamos começar com seu cadastro, ok?</string>
     <string name="welcome_instructions">Enviaremos um SMS para o seu número de telefone. Tarifas de SMS de sua operadora podem ser aplicadas</string>
@@ -49,6 +49,7 @@
     <string name="preco">Insira o valor da vaga</string>
     <string name="currency">R$</string>
     <string name="itens_acompanhantes">Itens que acompanham a vaga</string>
+    <string name="nome_tipo_do_quarto">Tipo do quarto</string>
 
 
     <string-array name="ddd">

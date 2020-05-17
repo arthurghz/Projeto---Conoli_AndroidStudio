@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login(View View){
-        Intent intent1 = new Intent(getApplicationContext(), login.class);
+        Intent intent1 = new Intent(getApplicationContext(), cadastro_imovel.class);
         startActivity(intent1);
     }
 }

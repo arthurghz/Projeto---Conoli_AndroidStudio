@@ -182,38 +182,101 @@
                 app:layout_constraintTop_toTopOf="parent"/>
 
             <RadioGroup
-                android:layout_width="0sp"
-                android:layout_height="0sp"
+                android:id="@+id/radio_tipo_da_vaga"
                 android:orientation="horizontal"
+                android:layout_width="0sp"
+                android:layout_height="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintDimensionRatio="40:12"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView_tipoDaVaga">
+                app:layout_constraintTop_toBottomOf="@+id/textView_tipoDaVaga"
+                app:layout_constraintDimensionRatio="500:75">
+
+                <RadioButton
+                    android:id="@+id/radio_masculina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_tipo_masculina"
+                    android:button="@android:color/transparent"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/radio_feminina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/style_tipo_feminina"
+                    android:button="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/radio_mista"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/style_tipo_mista"
+                    android:button="@android:color/transparent" />
+
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <TextView
+                android:id="@+id/textView_tipoDoQuarto"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:paddingTop="16dp"
+                android:text="@string/nome_tipo_do_quarto"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <RadioGroup
+                android:id="@+id/radio_tipo_do_quarto"
+                android:orientation="horizontal"
+                android:layout_width="0sp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_tipoDoQuarto"
+                app:layout_constraintDimensionRatio="500:75">
 
                 <RadioButton
                     android:id="@+id/radio_individual"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="15dp"
-                    android:layout_weight=".3"
+                    android:layout_weight="1"
                     android:background="@drawable/style_tipo_individual"
                     android:button="@android:color/transparent"
-                    android:checked="true" />
+                    android:checked="true"/>
 
                 <RadioButton
                     android:id="@+id/radio_compartilhado"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="15dp"
-                    android:layout_weight=".4"
+                    android:layout_weight="1"
+                    android:layout_marginStart="15dp"
                     android:background="@drawable/style_tipo_compartilhado"
                     android:button="@android:color/transparent" />
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2.8"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/ic_dummy"/>
 
             </RadioGroup>
 
@@ -282,12 +345,11 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-
             <CheckBox
                 android:id="@+id/checkBox_geladeira"
                 android:layout_width="70dp"
                 android:layout_height="80dp"
-                android:background="@drawable/ic_checkbox_geladeira"
+                android:background="@drawable/style_checkbox_geladeira"
                 android:button="@android:color/transparent"
                 android:layout_margin="10dp"
                 app:layout_constraintHorizontal_chainStyle="spread"
@@ -298,9 +360,9 @@
 
             <CheckBox
                 android:id="@+id/checkBox_maquinadelavar"
-                android:layout_width="100dp"
+                android:layout_width="93dp"
                 android:layout_height="80dp"
-                android:background="@drawable/ic_checkbox_maquinadelavar"
+                android:background="@drawable/style_checkbox_maquinadelavar"
                 android:button="@android:color/transparent"
                 android:layout_margin="10dp"
                 app:layout_constraintHorizontal_chainStyle="spread"
@@ -313,7 +375,7 @@
                 android:id="@+id/checkBox_fogao"
                 android:layout_width="70dp"
                 android:layout_height="80dp"
-                android:background="@drawable/ic_checkbox_fogao"
+                android:background="@drawable/style_checkbox_fogao"
                 android:button="@android:color/transparent"
                 android:layout_margin="10dp"
                 app:layout_constraintHorizontal_chainStyle="spread"
@@ -326,7 +388,7 @@
                 android:id="@+id/checkBox_microondas"
                 android:layout_width="70dp"
                 android:layout_height="80dp"
-                android:background="@drawable/ic_checkbox_microondas"
+                android:background="@drawable/style_checkbox_microondas"
                 android:button="@android:color/transparent"
                 android:layout_margin="10dp"
                 app:layout_constraintHorizontal_chainStyle="spread"
@@ -338,7 +400,7 @@
                 android:id="@+id/checkBox_televisao"
                 android:layout_width="70dp"
                 android:layout_height="80dp"
-                android:background="@drawable/ic_checkbox_tv"
+                android:background="@drawable/style_checkbox_tv"
                 android:button="@android:color/transparent"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
@@ -353,7 +415,7 @@
                 android:id="@+id/checkBox_wifi"
                 android:layout_width="70dp"
                 android:layout_height="80dp"
-                android:background="@drawable/ic_checkbox_wifi"
+                android:background="@drawable/style_checkbox_wifi"
                 android:button="@android:color/transparent"
                 android:layout_margin="10dp"
                 app:layout_constraintHorizontal_chainStyle="spread"
@@ -365,7 +427,7 @@
                 android:id="@+id/checkBox_garagem"
                 android:layout_width="70dp"
                 android:layout_height="80dp"
-                android:background="@drawable/ic_checkbox_garagem"
+                android:background="@drawable/style_checkbox_garagem"
                 android:button="@android:color/transparent"
                 android:layout_margin="10dp"
                 app:layout_constraintHorizontal_chainStyle="spread"
@@ -377,7 +439,7 @@
                 android:id="@+id/checkBox_mobilia"
                 android:layout_width="70dp"
                 android:layout_height="80dp"
-                android:background="@drawable/ic_checkbox_mobilia"
+                android:background="@drawable/style_checkbox_mobilia"
                 android:button="@android:color/transparent"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
@@ -392,7 +454,7 @@
                 android:id="@+id/checkBox_utensilio"
                 android:layout_width="70dp"
                 android:layout_height="80dp"
-                android:background="@drawable/ic_checkbox_utensilios"
+                android:background="@drawable/style_checkbox_utensilios"
                 android:button="@android:color/transparent"
                 android:layout_margin="10dp"
                 app:layout_constraintHorizontal_chainStyle="spread"
@@ -404,7 +466,7 @@
                 android:id="@+id/checkBox_interfone"
                 android:layout_width="70dp"
                 android:layout_height="80dp"
-                android:background="@drawable/ic_checkbox_interfone"
+                android:background="@drawable/style_checkbox_interfone"
                 android:button="@android:color/transparent"
                 android:layout_margin="10dp"
                 app:layout_constraintHorizontal_chainStyle="spread"
@@ -414,9 +476,9 @@
 
             <CheckBox
                 android:id="@+id/checkBox_arcondicionado"
-                android:layout_width="100dp"
+                android:layout_width="90dp"
                 android:layout_height="80dp"
-                android:background="@drawable/ic_checkbox_arcondicionado"
+                android:background="@drawable/style_checkbox_arcondicionado"
                 android:button="@android:color/transparent"
                 android:layout_margin="10dp"
                 app:layout_constraintHorizontal_chainStyle="spread"
@@ -428,7 +490,7 @@
                 android:id="@+id/checkBox_varanda"
                 android:layout_width="70dp"
                 android:layout_height="80dp"
-                android:background="@drawable/ic_checkbox_varanda"
+                android:background="@drawable/style_checkbox_varanda"
                 android:button="@android:color/transparent"
                 android:layout_margin="10dp"
                 app:layout_constraintHorizontal_chainStyle="spread"
