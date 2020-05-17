@@ -30,13 +30,8 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="br.unicamp.ft.a213281_j199617.conoli.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-    <fragment
         android:id="@+id/biografiaFragment"
-        android:name="br.unicamp.ft.a213281_j199617.conoli.BiografiaFragment"
+        android:name="br.unicamp.ft.a213281_j199617.conoli.ui.BiografiaFragment"
         android:label="Sobre nós" />
 
 </navigation>

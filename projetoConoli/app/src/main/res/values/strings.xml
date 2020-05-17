@@ -3,8 +3,8 @@
     <string name="title_activity_navigation_drawer">navigationDrawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Nome do usuário</string>
+    <string name="nav_header_subtitle">email.usuario@dominio.com.br</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -19,7 +19,7 @@
         Escolhi o curso de Bacharelado em Sistemas de Informação devido a diversidade que o curso propõe e por interesse nas áreas de Ciência de Dados,
         inteligência Artificial e inovação e transformação Digital.</string>
 
-    <string name="menu_home">Home</string>
+    <string name="menu_home">Início</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
