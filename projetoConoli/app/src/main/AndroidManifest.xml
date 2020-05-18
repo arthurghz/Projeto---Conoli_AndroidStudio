@@ -9,7 +9,6 @@
         android:roundIcon="@drawable/ic_logo_conoli"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.imoveis_1"></activity>
         <activity android:name=".cadastro_imovel" />
         <activity android:name=".checar_sms" />
         <activity android:name=".verifysms" />
