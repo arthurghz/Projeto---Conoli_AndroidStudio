@@ -3,6 +3,7 @@ package br.unicamp.ft.a213281_j199617.conoli;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -19,6 +20,9 @@ import androidx.appcompat.widget.Toolbar;
 public class navigationDrawer extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+
+    View headerView; //para futura manipulação das strings
+    TextView txtNumeroUsuario; // alterar numero do usuario logado
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +41,12 @@ public class navigationDrawer extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
+        headerView = navigationView.getHeaderView(0); // passa rseferencia ao header
+        txtNumeroUsuario = headerView.findViewById(R.id.numeroDoUsuario); //obtem o id do usuario
+
+        txtNumeroUsuario.setText("numero alterado"); // servirá para alterar o numero do usuario logado
     }
 
     @Override

@@ -15,6 +15,7 @@
             android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
             app:destination="@id/nav_home_second" />
     </fragment>
+
     <fragment
         android:id="@+id/nav_home_second"
         android:name="br.unicamp.ft.a213281_j199617.conoli.ui.home.HomeSecondFragment"
@@ -33,5 +34,10 @@
         android:id="@+id/biografiaFragment"
         android:name="br.unicamp.ft.a213281_j199617.conoli.ui.BiografiaFragment"
         android:label="Sobre nós" />
+    <fragment
+        android:id="@+id/imoveis"
+        android:name="br.unicamp.ft.a213281_j199617.conoli.ui.Imoveis"
+        android:label="fragment_imoveis"
+        tools:layout="@layout/fragment_imoveis" />
 
 </navigation>

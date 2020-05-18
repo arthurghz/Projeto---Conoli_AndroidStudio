@@ -19,14 +19,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 
     public void login(View View){
-        Intent intent1 = new Intent(getApplicationContext(), cadastro_imovel.class);
+        Intent intent1 = new Intent(getApplicationContext(), login.class);
         startActivity(intent1);
     }
 }

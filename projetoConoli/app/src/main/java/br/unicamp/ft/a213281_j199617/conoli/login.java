@@ -84,8 +84,8 @@ public class login extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Toast.makeText(getApplicationContext(),
                                     "LOGIN BEM SUCEDIDOD POHAAAAAAAA", Toast.LENGTH_LONG).show();
-                            Intent welcome = new Intent(getApplicationContext(), MainActivity.class);
-                            startActivity(welcome);
+                            Intent navigation = new Intent(getApplicationContext(), navigationDrawer.class);
+                            startActivity(navigation);
                         } else {
                             if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
                                 Toast.makeText(getApplicationContext(),
@@ -149,6 +149,7 @@ public class login extends AppCompatActivity {
             codeSent = s;
         }
     };
+
 
 
 }

@@ -86,7 +86,7 @@
                     android:gravity="center"
                     android:background="@drawable/style_administracao_imobiliaria"
                     android:button="@android:color/transparent"
-                    android:checked="true" />
+                    android:checked="true"/>
 
                 <RadioButton
                     android:id="@+id/radio_particular"
@@ -464,7 +464,7 @@
 
             <CheckBox
                 android:id="@+id/checkBox_interfone"
-                android:layout_width="70dp"
+                android:layout_width="71dp"
                 android:layout_height="80dp"
                 android:background="@drawable/style_checkbox_interfone"
                 android:button="@android:color/transparent"
@@ -480,7 +480,10 @@
                 android:layout_height="80dp"
                 android:background="@drawable/style_checkbox_arcondicionado"
                 android:button="@android:color/transparent"
-                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
                 app:layout_constraintHorizontal_chainStyle="spread"
                 app:layout_constraintTop_toBottomOf="@id/checkBox_mobilia"
                 app:layout_constraintEnd_toStartOf="@id/checkBox_varanda"

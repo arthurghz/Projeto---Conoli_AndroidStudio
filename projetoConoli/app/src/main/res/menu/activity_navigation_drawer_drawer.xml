@@ -12,5 +12,10 @@
             android:id="@+id/biografiaFragment"
             android:icon="@drawable/ic_menu_group"
             android:title="@string/biografia"/>
+        <item
+            android:id="@id/imoveis"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Meus imóveis"/>
+
     </group>
 </menu>
