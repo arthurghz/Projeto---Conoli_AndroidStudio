@@ -14,10 +14,6 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Spinner spinner;
-    private EditText editText;
-    FirebaseAuth mAuth;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 

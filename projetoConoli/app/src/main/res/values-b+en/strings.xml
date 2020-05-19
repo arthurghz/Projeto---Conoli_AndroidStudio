@@ -29,7 +29,7 @@
     //Biografia
     <string name="nome_ra1">João Gabriel (199617)</string>
     <string name="bio1">Entusiastic by personal development, I chose the bachelor major in Systems of Information due to its strong relation to computing, programming and business theory.
-    Through personal and professional experiences I try to put myself in the other\'s place and as far as (im) possible
+    Through personal and professional experiences I try to put myself in the other\'s place and as far as \(im\) possible
     be able to solve problems and make the situations in which I find myself better than when I arrived. I seek, through knowledge and experiences, Acumen.</string>
 
     <string name="nome_ra2">Arthur Souza (213281)</string>
@@ -61,7 +61,15 @@
     <string name="currency">U$</string>
     <string name="itens_acompanhantes">"Itens that accompany the vacancy "</string>
     <string name="nome_tipo_do_quarto">Room type</string>
-
+    <string name="tipo_do_imovel_casa">House</string>
+    <string name="tipo_do_imovel_apartamento">Apartment</string>
+    <string name="tipo_do_imovel_kitnet">Kitnet</string>
+    <string name="tipo_da_vaga_masculina">Male</string>
+    <string name="tipo_da_vaga_feminina">Female</string>
+    <string name="tipo_da_vaga_mista">Mixed</string>
+    <string name="tipo_do_quarto_individual">Individual</string>
+    <string name="tipo_do_quarto_compartilhado">Shared</string>
+    <string name="botao_registrar_proximo">Next →</string>
 
     <string name="todo">TODO</string>
     <string name="title_activity_login">Sign in</string>
