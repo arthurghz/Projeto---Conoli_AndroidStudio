@@ -67,36 +67,34 @@
 
             <RadioGroup
                 android:id="@+id/radioGroup"
-                android:layout_width="0sp"
-                android:layout_height="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView4"
-                app:layout_constraintDimensionRatio="560:277">
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
 
                 <RadioButton
+                    android:drawableTop="@drawable/ic_icon_imobiliaria"
                     android:id="@+id/radio_imobiliaria"
-                    android:tag="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_width="81dp"
+                    android:layout_height="66dp"
                     android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:background="@drawable/style_administracao_imobiliaria"
                     android:button="@android:color/transparent"
                     android:checked="true"/>
 
                 <RadioButton
+                    android:drawableTop="@drawable/ic_icon_particular"
                     android:id="@+id/radio_particular"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="81dp"
+                    android:layout_height="66dp"
                     android:layout_marginStart="15dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:background="@drawable/style_administracao_particular"
-                    android:button="@android:color/transparent" />
+                    android:button="@android:color/transparent"/>
 
             </RadioGroup>
 
@@ -123,40 +121,49 @@
 
             <RadioGroup
                 android:orientation="horizontal"
-                android:layout_width="0sp"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView5"
-                app:layout_constraintDimensionRatio="500:75">
+                app:layout_constraintTop_toBottomOf="@+id/textView5">
 
                 <RadioButton
                     android:id="@+id/radio_casa"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/style_tipo_casa"
+                    android:layout_marginRight="10dp"
+                    android:paddingVertical="15dp"
+                    android:background="@drawable/style_botao_retangular"
                     android:button="@android:color/transparent"
-                    android:checked="true"/>
+                    android:checked="true"
+                    android:text="@string/tipo_do_imovel_casa"
+                    android:textAlignment="center"/>
 
                 <RadioButton
                     android:id="@+id/radio_apartamento"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:layout_marginStart="15dp"
-                    android:background="@drawable/style_tipo_apartamento"
-                    android:button="@android:color/transparent" />
+                    android:layout_marginHorizontal="5dp"
+                    android:paddingVertical="15dp"
+                    android:background="@drawable/style_botao_retangular"
+                    android:button="@android:color/transparent"
+                    android:text="@string/tipo_do_imovel_apartamento"
+                    android:textAlignment="center"/>
 
                 <RadioButton
                     android:id="@+id/radio_kitnet"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:layout_marginStart="15dp"
-                    android:background="@drawable/style_tipo_kitnet"
-                    android:button="@android:color/transparent" />
+                    android:paddingVertical="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/style_botao_retangular"
+                    android:button="@android:color/transparent"
+                    android:text="@string/tipo_do_imovel_kitnet"
+                    android:textAlignment="center"/>
 
             </RadioGroup>
 
@@ -184,40 +191,49 @@
             <RadioGroup
                 android:id="@+id/radio_tipo_da_vaga"
                 android:orientation="horizontal"
-                android:layout_width="0sp"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView_tipoDaVaga"
-                app:layout_constraintDimensionRatio="500:75">
+                app:layout_constraintTop_toBottomOf="@+id/textView_tipoDaVaga">
 
                 <RadioButton
                     android:id="@+id/radio_masculina"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/style_tipo_masculina"
+                    android:layout_marginEnd="10dp"
+                    android:paddingVertical="15dp"
+                    android:background="@drawable/style_botao_retangular"
                     android:button="@android:color/transparent"
-                    android:checked="true"/>
+                    android:checked="true"
+                    android:text="@string/tipo_da_vaga_masculina"
+                    android:textAlignment="center"/>
 
                 <RadioButton
                     android:id="@+id/radio_feminina"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:layout_marginStart="15dp"
-                    android:background="@drawable/style_tipo_feminina"
-                    android:button="@android:color/transparent" />
+                    android:layout_marginHorizontal="5dp"
+                    android:paddingVertical="15dp"
+                    android:background="@drawable/style_botao_retangular"
+                    android:button="@android:color/transparent"
+                    android:text="@string/tipo_da_vaga_feminina"
+                    android:textAlignment="center"/>
 
                 <RadioButton
                     android:id="@+id/radio_mista"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:layout_marginStart="15dp"
-                    android:background="@drawable/style_tipo_mista"
-                    android:button="@android:color/transparent" />
+                    android:paddingVertical="15dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/style_botao_retangular"
+                    android:button="@android:color/transparent"
+                    android:text="@string/tipo_da_vaga_mista"
+                    android:textAlignment="center"/>
 
             </RadioGroup>
 
@@ -245,38 +261,37 @@
             <RadioGroup
                 android:id="@+id/radio_tipo_do_quarto"
                 android:orientation="horizontal"
-                android:layout_width="0sp"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView_tipoDoQuarto"
-                app:layout_constraintDimensionRatio="500:75">
+                app:layout_constraintTop_toBottomOf="@+id/textView_tipoDoQuarto">
 
                 <RadioButton
                     android:id="@+id/radio_individual"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/style_tipo_individual"
+                    android:layout_marginEnd="10dp"
+                    android:paddingVertical="15dp"
+                    android:text="@string/tipo_do_quarto_individual"
+                    android:background="@drawable/style_botao_retangular"
                     android:button="@android:color/transparent"
-                    android:checked="true"/>
+                    android:checked="true"
+                    android:textAlignment="center"/>
 
                 <RadioButton
                     android:id="@+id/radio_compartilhado"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:layout_marginStart="15dp"
-                    android:background="@drawable/style_tipo_compartilhado"
-                    android:button="@android:color/transparent" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginStart="15dp"
-                    android:background="@drawable/ic_dummy"/>
+                    android:layout_marginHorizontal="5dp"
+                    android:paddingVertical="15dp"
+                    android:text="@string/tipo_do_quarto_compartilhado"
+                    android:background="@drawable/style_botao_retangular"
+                    android:button="@android:color/transparent"
+                    android:textAlignment="center"/>
 
             </RadioGroup>
 
@@ -514,11 +529,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:background="@drawable/ic_button_proximo"
+                android:text="@string/botao_registrar_proximo"
+                android:background="@drawable/style_botao_round_branco"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:onClick="navigationDrawer"/>
+                android:onClick="navigationDrawer"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp"
+                android:paddingHorizontal="25dp"
+                style="?android:attr/borderlessButtonStyle"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

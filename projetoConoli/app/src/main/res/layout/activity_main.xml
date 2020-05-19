@@ -13,6 +13,7 @@
         android:id="@+id/conoli_logo"
         android:layout_width="260dp"
         android:layout_height="76dp"
+
         android:src="@drawable/ic_logo_conoli_texto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,6 +21,7 @@
         app:layout_constraintBottom_toTopOf="@id/slogan"/>
 
     <TextView
+        android:textStyle=""
         android:id="@+id/slogan"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
@@ -48,12 +50,18 @@
 
     <Button
         style="?android:attr/borderlessButtonStyle"
-        android:layout_margin="11dp"
-        android:layout_width="166dp"
-        android:layout_height="65dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:background="@drawable/ic_button_getstarted"
+        android:background="@drawable/style_botao_round_branco"
         android:onClick="login"
+        android:text="@string/getstarted"
+        android:layout_margin="15dp"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="35dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

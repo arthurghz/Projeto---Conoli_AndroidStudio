@@ -3,11 +3,14 @@ package br.unicamp.ft.a213281_j199617.conoli;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -23,6 +26,8 @@ public class navigationDrawer extends AppCompatActivity {
 
     View headerView; //para futura manipulação das strings
     TextView txtNumeroUsuario; // alterar numero do usuario logado
+
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,11 +47,13 @@ public class navigationDrawer extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser user = mAuth.getCurrentUser();
 
         headerView = navigationView.getHeaderView(0); // passa rseferencia ao header
         txtNumeroUsuario = headerView.findViewById(R.id.numeroDoUsuario); //obtem o id do usuario
 
-        txtNumeroUsuario.setText("numero alterado"); // servirá para alterar o numero do usuario logado
+        txtNumeroUsuario.setText(user.getPhoneNumber()); // Exibe o nome do usuário atual
     }
 
     @Override

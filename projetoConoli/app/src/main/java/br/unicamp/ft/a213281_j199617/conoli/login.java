@@ -39,17 +39,10 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        mAuth = FirebaseAuth.getInstance();
         dd = findViewById(R.id.codigo_area);
         codigo = findViewById(R.id.codeverify);
         numero = findViewById(R.id.numberphone);
-        FirebaseUser user = mAuth.getCurrentUser();
-        if (user != null) {
-            Log.d("AUTH", "ESTÁ LOGADO COMO  - TROCA DE INTENT:" + user.getUid());
-            //troca DE INTENT SE JA TIVER LOGADO
-        } else {
-            Log.d("AUTH", "NAO ESTÁ LOGADO ");
-        }
+
         findViewById(R.id.requisitar).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,7 +76,7 @@ public class login extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(getApplicationContext(),
-                                    "LOGIN BEM SUCEDIDOD POHAAAAAAAA", Toast.LENGTH_LONG).show();
+                                    "LOGIN BEM SUCEDIDOD - Seja bem vindo!", Toast.LENGTH_LONG).show();
                             Intent navigation = new Intent(getApplicationContext(), navigationDrawer.class);
                             startActivity(navigation);
                         } else {
@@ -98,8 +91,8 @@ public class login extends AppCompatActivity {
 
     private void sendVerificationCode(){
 
-      String DDD = dd.getText().toString();
-      String  phone = "+55" + dd.getText().toString() + numero.getText().toString();
+        String DDD = dd.getText().toString();
+        String  phone = "+55" + dd.getText().toString() + numero.getText().toString();
         if(DDD.isEmpty()){
             Log.i(phone,"numero");
             numero.setError("Por favor, informar o DDD");
@@ -149,9 +142,4 @@ public class login extends AppCompatActivity {
             codeSent = s;
         }
     };
-
-
-
 }
-
-

@@ -1,56 +1,40 @@
 <resources>
-    <string name="app_name">projetoConoli</string>
+    //Configurações do app
+    <string name="app_name">Conoli</string>
     <string name="title_activity_navigation_drawer">navigationDrawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Nome do usuário</string>
     <string name="nav_header_subtitle">numero do usuario</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-
-
-    <string name="nome_ra1">João Gabriel (199617)</string>
-    <string name="bio1">Entusiástico pelo engrandecimento individual, escolhi o curso de Sistemas de Informação devido ao forte relacionamento a computação,
-        programação e teoria empresarial. Através de experiências pessoais e profissionais procuro colocar-me no lugar do outro e na medida do (im)possível
-        estar apto a resolver problemas e tornar as situações em que me encontro melhores do que quando eu cheguei. Busco, por conhecimentos e vivências, a argúcia.</string>
-
-    <string name="nome_ra2">Arthur Souza (213281)</string>
-    <string name="bio2">Acredito particularmente que temos como missão mudar as pessoas para que assim o mundo eventualmente se torne um lugar melhor pra todos.
-        Escolhi o curso de Bacharelado em Sistemas de Informação devido a diversidade que o curso propõe e por interesse nas áreas de Ciência de Dados,
-        inteligência Artificial e inovação e transformação Digital.</string>
-
-    <string name="menu_home">Início</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-
-    <string name="home_second">Home Second</string>
-    <string name="biografia">Sobre os criadores</string>
+    <string name="action_settings">Configurações</string>
     <string name="todo">TODO</string>
     <string name="title_activity_login">Sign in</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="slogan">O aplicativo feito por estudantes e para estudantes universitários que busca facilitar a forma de oferta e busca de moradias ;)</string>
-    <string name="welcome_message">Que bom ter você por aqui!</string>
-    <string name="welcome_register">Vamos começar com seu cadastro, ok?</string>
-    <string name="welcome_instructions">Enviaremos um SMS para o seu número de telefone. Tarifas de SMS de sua operadora podem ser aplicadas</string>
     <string name="register_numer">Continuar</string>
-    <string name="about_us">Sobre os criadores</string>
-    <string name="nome_cadastro">Cadastre um imóvel</string>
-    <string name="nome_tipo_de_administracao">Administração do imóvel</string>
-    <string name="nome_tipo_do_imovel">Tipo do imóvel</string>
-    <string name="nome_tipo_da_vaga">Tipo da vaga</string>
-    <string name="nome_preco">Preço</string>
-    <string name="preco">Insira o valor da vaga</string>
-    <string name="currency">R$</string>
-    <string name="itens_acompanhantes">Itens que acompanham a vaga</string>
-    <string name="nome_tipo_do_quarto">Tipo do quarto</string>
 
+    //GetStarted Screen
+    <string name="slogan">O aplicativo feito por estudantes e para estudantes universitários que busca facilitar a forma de oferta e busca de moradias ;)</string>
+    <string name="getstarted">Vamos lá!</string>
+
+    //Login Screen
+    <string name="login_message">Que bom ter você por aqui!</string>
+    <string name="login_register">Vamos começar com seu cadastro, ok?</string>
+    <string name="login_instructions">Enviaremos um SMS para o seu número de telefone. Tarifas de SMS de sua operadora podem ser aplicadas</string>
+    <string name="login_number">Qual o seu número de telefone?</string>
+    <string name="login_hint_ddnumber">11</string>
+    <string name="login_hint_phonenumber">Digite aqui com DDD</string>
+    <string name="botao_registrar_numero">Continuar</string>
+    <string name="login_codigo_recebido">Digite aqui o código recebido.</string>
+    <string name="login_hint_codigo">Ex: 123456</string>
+    <string name="botao_login">Login</string>
+    <string name="conoli_logo">Logo do App</string>
 
     <string-array name="ddd">
         <item>11</item>
@@ -63,7 +47,51 @@
         <item>11</item>
     </string-array>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    //Biografia
+    <string name="nome_ra1">João Gabriel (199617)</string>
+    <string name="bio1">Entusiástico pelo engrandecimento individual, escolhi o curso de Sistemas de Informação devido ao forte relacionamento a computação,
+        programação e teoria empresarial. Através de experiências pessoais e profissionais procuro colocar-me no lugar do outro e na medida do (im)possível
+        estar apto a resolver problemas e tornar as situações em que me encontro melhores do que quando eu cheguei. Busco, por conhecimentos e vivências, a argúcia.</string>
 
+    <string name="nome_ra2">Arthur Souza (213281)</string>
+    <string name="bio2">Acredito particularmente que temos como missão mudar as pessoas para que assim o mundo eventualmente se torne um lugar melhor pra todos.
+        Escolhi o curso de Bacharelado em Sistemas de Informação devido a diversidade que o curso propõe e por interesse nas áreas de Ciência de Dados,
+        inteligência Artificial e inovação e transformação Digital.</string>
+
+    <string name="biografia">Sobre os criadores</string>
+    <string name="about_us">Sobre os criadores</string>
+
+    //Home Fragment
+    <string name="dashboard_bem_vindo">Bem vindo(a) ao seu menu de navegação :)</string>
+    <string name="menu_home">Início</string>
+    <string name="home_second">Home Second</string>
+
+    //Meus imóveis
+    <string name="imoveis">Seus imóveis</string>
+    <string name="imoveis_registrados">Você não possui imoveis registrados</string>
+    <string name="botao_registrar_imovel">Cadastrar Imóvel</string>
+    <string name="menu_imoveis">Meus imóveis</string>
+    <string name="fragment_imoveis">Imóveis</string>
+
+    //Cadastro de imóvel
+    <string name="nome_cadastro">Cadastre um imóvel</string>
+    <string name="nome_tipo_de_administracao">Administração do imóvel</string>
+    <string name="nome_tipo_do_imovel">Tipo do imóvel</string>
+    <string name="nome_tipo_da_vaga">Tipo da vaga</string>
+    <string name="nome_preco">Preço</string>
+    <string name="preco">Insira o valor da vaga</string>
+    <string name="currency">R$</string>
+    <string name="itens_acompanhantes">Itens que acompanham a vaga</string>
+    <string name="nome_tipo_do_quarto">Tipo do quarto</string>
+    <string name="tipo_do_imovel_casa">Casa</string>
+    <string name="tipo_do_imovel_apartamento">Apartamento</string>
+    <string name="tipo_do_imovel_kitnet">Kitnet</string>
+    <string name="tipo_da_vaga_masculina">Masculina</string>
+    <string name="tipo_da_vaga_feminina">Feminina</string>
+    <string name="tipo_da_vaga_mista">Mista</string>
+    <string name="tipo_do_quarto_individual">Individual</string>
+    <string name="tipo_do_quarto_compartilhado">Compartilhado</string>
+    <string name="botao_registrar_proximo">Próximo  →</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

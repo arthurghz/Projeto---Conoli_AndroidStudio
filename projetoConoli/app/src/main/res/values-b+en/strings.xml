@@ -1,0 +1,90 @@
+<resources>
+    //Configurações do app
+    <string name="app_name">projetoConoli</string>
+    <string name="title_activity_navigation_drawer">navigationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">User name</string>
+    <string name="nav_header_subtitle">User name</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    //GetStarted Screen
+    <string name="slogan">The app made by students for college students that seeks to facilitate the way to search and offer places to stay ;)</string>
+    <string name="getstarted">Get Started!</string>
+
+    //Login Screen
+    <string name="login_message">It\'s good to have you around</string>
+    <string name="login_register">Let\'s start with your registration, ok?</string>
+    <string name="login_instructions">We are going to send a message to your phone number. Local charges may be applied.</string>
+    <string name="login_number">What\'s your phone number?</string>
+    <string name="login_hint_ddnumber">11</string>
+    <string name="login_hint_phonenumber">Type your phone number</string>
+    <string name="botao_registrar_numero">Continue</string>
+    <string name="login_codigo_recebido">Enter the received code.</string>
+    <string name="login_hint_codigo">Ex: 123456</string>
+    <string name="botao_login">Login</string>
+    <string name="conoli_logo">App logo</string>
+
+    //Biografia
+    <string name="nome_ra1">João Gabriel (199617)</string>
+    <string name="bio1">Entusiastic by personal development, I chose the bachelor major in Systems of Information due to its strong relation to computing, programming and business theory.
+    Through personal and professional experiences I try to put myself in the other\'s place and as far as (im) possible
+    be able to solve problems and make the situations in which I find myself better than when I arrived. I seek, through knowledge and experiences, Acumen.</string>
+
+    <string name="nome_ra2">Arthur Souza (213281)</string>
+    <string name="bio2">I believe, personally, that we have all have a mission to change people so that the world eventually
+        becomes a better place for all of us. I chose the bachelor in Systems of Information due to the diversity that the
+        course provides and for my interest in Data Science, Artificial Intelligence and Digital inovation &amp; transformation.</string>
+    <string name="biografia">About the creators</string>
+    <string name="about_us">About the creators</string>
+
+    //Home Fragment
+    <string name="dashboard_bem_vindo">Welcome to you navigation menu :)</string>
+    <string name="menu_home">Home</string>
+    <string name="home_second">Home Second</string>
+
+    //Meus imóveis
+    <string name="imoveis">Your properties</string>
+    <string name="imoveis_registrados">You don\'t have any registred properties</string>
+    <string name="botao_registrar_imovel">Register property</string>
+    <string name="menu_imoveis">My properties</string>
+    <string name="fragment_imoveis">Properties</string>
+
+    //Cadastro de imóvel
+    <string name="nome_cadastro">Register property</string>
+    <string name="nome_tipo_de_administracao">Property administration</string>
+    <string name="nome_tipo_do_imovel">Property type</string>
+    <string name="nome_tipo_da_vaga">Vacancy type</string>
+    <string name="nome_preco">Price</string>
+    <string name="preco">Enter the price of the vacancy</string>
+    <string name="currency">U$</string>
+    <string name="itens_acompanhantes">"Itens that accompany the vacancy "</string>
+    <string name="nome_tipo_do_quarto">Room type</string>
+
+
+    <string name="todo">TODO</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="register_numer">Continue</string>
+
+
+    <string-array name="ddd">
+        <item>11</item>
+        <item>19</item>
+        <item>12</item>
+        <item>22</item>
+        <item>81</item>
+        <item>11</item>
+        <item>11</item>
+        <item>11</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

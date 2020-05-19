@@ -37,7 +37,7 @@
     <fragment
         android:id="@+id/imoveis"
         android:name="br.unicamp.ft.a213281_j199617.conoli.ui.Imoveis"
-        android:label="fragment_imoveis"
+        android:label="@string/fragment_imoveis"
         tools:layout="@layout/fragment_imoveis" />
 
 </navigation>

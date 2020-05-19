@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="white">#ffffff</color>
-    <color name="pinkSelectedColor">#DC4F89</color>
+    <color name="pinkSelectedColor">#f763a0</color>
+    <color name="pinkSelectedColorDark">#c9497e</color>
     <color name="black">#1c1b1b</color>
+    <color name="cinza">#bfbfbf</color>
 </resources>

@@ -4,16 +4,18 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import br.unicamp.ft.a213281_j199617.conoli.R;
+
 public class HomeViewModel extends ViewModel {
 
-    private MutableLiveData<String> mText;
+    private MutableLiveData<Integer> mText;
 
     public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Bem vindo(a) ao seu menu de navegação :)");
+        mText.setValue(R.string.dashboard_bem_vindo);
     }
 
-    public LiveData<String> getText() {
+    public LiveData<Integer> getText() {
         return mText;
     }
 }
