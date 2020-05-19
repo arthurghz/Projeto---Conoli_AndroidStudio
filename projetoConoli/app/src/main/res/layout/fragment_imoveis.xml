@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Imoveis"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.BiografiaFragment"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:drawableTop="@drawable/ic_logo_conoli_texto"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="280dp"
+                android:gravity="center"
+                android:text="@string/imoveis"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/imoveis_registrados"/>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/batataCadastro"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:text="@string/botao_registrar_imovel"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="@drawable/style_botao_round_roxo"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

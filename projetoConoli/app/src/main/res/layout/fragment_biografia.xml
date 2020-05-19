@@ -1,23 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="@color/navyPurpleSortaBlueishBitchAssBackgroundMainColor">
-
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:stretchColumns="1">
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BiografiaFragment"
-    android:orientation="vertical">
+    android:fillViewport="true"
+    android:background="@color/colorPrimary">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.BiografiaFragment"
+    android:orientation="vertical"
+    tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:drawableTop="@drawable/ic_logo_conoli_texto"
+                android:paddingTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_width="280dp"
+                android:gravity="center"
+                android:text="@string/about_us"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
 
     <LinearLayout
         android:paddingTop="25dp"
@@ -25,15 +44,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            xmlns:app="http://schemas.android.com/apk/res-auto"
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image2"
             android:layout_width="130dp"
             android:layout_height="130dp"
-            android:paddingLeft="10dp"
+            android:layout_margin="10dp"
             android:src="@drawable/perfil2"
             app:civ_border_width="2dp"
-            app:civ_border_color="#FF000000"/>
+            app:civ_border_color="@color/white"/>
 
         <LinearLayout
             android:paddingLeft="10dp"
@@ -68,14 +86,13 @@
         android:paddingBottom="120dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/profile_image1"
             android:layout_width="130dp"
             android:layout_height="130dp"
-            android:paddingLeft="10dp"
+            android:layout_margin="10dp"
             android:src="@drawable/perfil1"
             app:civ_border_width="2dp"
-            app:civ_border_color="#FF000000"/>
+            app:civ_border_color="@color/white"/>
 
         <LinearLayout
             android:paddingLeft="10dp"

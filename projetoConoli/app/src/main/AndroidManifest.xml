@@ -4,23 +4,24 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_logo_conoli"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_logo_conoli"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".cadastro_imovel" />
         <activity android:name=".checar_sms" />
         <activity android:name=".verifysms" />
-        <activity android:name="br.unicamp.ft.a213281_j199617.conoli.login" />
+        <activity android:name=".login" />
         <activity android:name=".ui.Login" />
         <activity
             android:name=".ui.LoginActivity"
             android:label="@string/title_activity_login" />
         <activity
-            android:name="br.unicamp.ft.a213281_j199617.conoli.navigationDrawer"
+            android:name=".navigationDrawer"
             android:label="@string/title_activity_navigation_drawer"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="br.unicamp.ft.a213281_j199617.conoli.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
