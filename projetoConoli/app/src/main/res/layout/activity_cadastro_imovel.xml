@@ -66,8 +66,8 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <RadioGroup
-                android:id="@+id/radioGroup"
-                android:layout_width="wrap_content"
+                android:id="@+id/radioGroupAdmImovel"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -76,10 +76,12 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView4">
 
                 <RadioButton
-                    android:drawableTop="@drawable/ic_icon_imobiliaria"
+                    android:background="@drawable/style_administracao_imobiliaria"
                     android:id="@+id/radio_imobiliaria"
-                    android:layout_width="81dp"
-                    android:layout_height="66dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="135dp"
+                    android:scaleX="1"
+                    android:scaleY="1"
                     android:layout_marginEnd="15dp"
                     android:layout_weight="1"
                     android:gravity="center"
@@ -87,10 +89,12 @@
                     android:checked="true"/>
 
                 <RadioButton
-                    android:drawableTop="@drawable/ic_icon_particular"
+                    android:background="@drawable/style_administracao_particular"
                     android:id="@+id/radio_particular"
-                    android:layout_width="81dp"
-                    android:layout_height="66dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="135dp"
+                    android:scaleX="1"
+                    android:scaleY="1"
                     android:layout_marginStart="15dp"
                     android:layout_weight="1"
                     android:gravity="center"
@@ -120,6 +124,7 @@
                 app:layout_constraintTop_toTopOf="parent"/>
 
             <RadioGroup
+                android:id="@+id/radioGroupTipoImovel"
                 android:orientation="horizontal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -189,7 +194,7 @@
                 app:layout_constraintTop_toTopOf="parent"/>
 
             <RadioGroup
-                android:id="@+id/radio_tipo_da_vaga"
+                android:id="@+id/radioGroupTipoVaga"
                 android:orientation="horizontal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -259,7 +264,7 @@
                 app:layout_constraintTop_toTopOf="parent"/>
 
             <RadioGroup
-                android:id="@+id/radio_tipo_do_quarto"
+                android:id="@+id/radioGroupTipoQuarto"
                 android:orientation="horizontal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -279,7 +284,7 @@
                     android:background="@drawable/style_botao_retangular"
                     android:button="@android:color/transparent"
                     android:checked="true"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center" />
 
                 <RadioButton
                     android:id="@+id/radio_compartilhado"
@@ -371,7 +376,8 @@
                 app:layout_constraintEnd_toStartOf="@id/checkBox_maquinadelavar"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textView_itensExtras"
-                app:layout_constraintBottom_toTopOf="@id/checkBox_microondas"/>
+                app:layout_constraintBottom_toTopOf="@id/checkBox_microondas"
+                />
 
             <CheckBox
                 android:id="@+id/checkBox_maquinadelavar"
@@ -526,6 +532,7 @@
             android:background="@color/colorPrimary">
 
             <Button
+                android:id="@+id/buttonRegistrarImovel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
@@ -534,12 +541,13 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:onClick="navigationDrawer"
+                android:onClick="registrarImovel"
                 android:textAllCaps="false"
                 android:textColor="@color/colorPrimary"
                 android:textSize="17sp"
                 android:paddingHorizontal="25dp"
-                style="?android:attr/borderlessButtonStyle"/>
+                style="?android:attr/borderlessButtonStyle"
+                />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
