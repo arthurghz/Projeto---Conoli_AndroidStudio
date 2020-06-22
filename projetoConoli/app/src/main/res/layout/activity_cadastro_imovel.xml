@@ -86,7 +86,9 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:button="@android:color/transparent"
-                    android:checked="true"/>
+                    android:checked="true"
+                    android:text="Imobiliaria"
+                    android:textColor="#00FFFFFF"/>
 
                 <RadioButton
                     android:background="@drawable/style_administracao_particular"
@@ -98,7 +100,9 @@
                     android:layout_marginStart="15dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:button="@android:color/transparent"/>
+                    android:button="@android:color/transparent"
+                    android:text="Particular"
+                    android:textColor="#00FFFFFF"/>
 
             </RadioGroup>
 
