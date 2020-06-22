@@ -107,6 +107,7 @@ public class cadastro_imovel extends AppCompatActivity {
         imovel.put("tipo_imovel", valorTipoImovel);
         imovel.put("tipo_vaga", valorTipoVaga);
         imovel.put("tipo_quarto", valorTipoQuarto);
+        imovel.put("preco", valorPreco);
         imovel.put("geladeira", checkboxGeladeira);
         imovel.put("maquina_de_lavar", checkboxMaquinaDeLavar);
         imovel.put("fogao", checkboxFogao);
