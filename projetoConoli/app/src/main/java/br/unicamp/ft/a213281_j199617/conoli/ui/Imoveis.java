@@ -44,6 +44,7 @@ public class Imoveis extends Fragment {
     private RecyclerView recyclerView;
     private AdapterConsulta adapter;
 
+
     public Imoveis() {
         // Required empty public constructor
     }
@@ -53,22 +54,27 @@ public class Imoveis extends Fragment {
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
+
+
+        adapter = new AdapterConsulta(
+                new ArrayList(Arrays.asList(Imovel.getImoveis(getContext())))
+        );
+
+        Log.i("Adapter", "setou o adapter");
+
         View view = inflater.inflate(R.layout.fragment_imoveis, container, false);
+
+        Log.i("Adapter", "inflou a view");
 
         recyclerView = view.findViewById(R.id.recycler_view);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        adapter = new AdapterConsulta(
-                new ArrayList(Arrays.asList(Imovel.getImoveis(getContext())))
-        );
-        Log.i("adapter", "criou a lista");
-
         recyclerView.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
-        Log.i("adapter", "setou o adapter");
+
         return view;
     }
+
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {

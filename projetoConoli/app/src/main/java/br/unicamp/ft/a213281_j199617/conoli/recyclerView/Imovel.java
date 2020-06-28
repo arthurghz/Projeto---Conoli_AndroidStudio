@@ -29,6 +29,7 @@ public class Imovel {
 
     static ArrayList<Imovel> imoveis = new ArrayList<>();
     private static final String TAG = "Status consulta";
+    static DocumentSnapshot ultimoDocumentoLido;
 
     private String usuario_dono, administracao, tipo_imovel, tipo_vaga, tipo_quarto, preco;
     private Boolean geladeira, maquina_de_lavar, fogao, microondas, televisao, wifi, garagem, mobilia,
@@ -40,6 +41,7 @@ public class Imovel {
     }
 
     public static Imovel[] getImoveis(Context context){
+
 
         readData(new FirestoreCallback() {
             @Override
@@ -64,8 +66,18 @@ public class Imovel {
         //Cria uma referencia a coleção de imóveis
         CollectionReference referenciaImoveis = db.collection("imoveis");
 
-        //Criação da query para consultar os documentos do usuário atual
-        Query consultaPorUsuario = referenciaImoveis.whereEqualTo("usuario_dono", Objects.requireNonNull(mAuth.getCurrentUser()).getUid());
+        //Criação da query para consultar os documentos do usuário
+
+        Query consultaPorUsuario = null;
+
+        if (ultimoDocumentoLido!=null){
+            consultaPorUsuario = referenciaImoveis.whereEqualTo("usuario_dono", Objects.requireNonNull(mAuth.getCurrentUser()).getUid()).startAfter(ultimoDocumentoLido);
+
+        }
+        else {
+
+            consultaPorUsuario = referenciaImoveis.whereEqualTo("usuario_dono", Objects.requireNonNull(mAuth.getCurrentUser()).getUid());
+        }
 
         consultaPorUsuario.
                 get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -79,6 +91,10 @@ public class Imovel {
                         imoveis.add(imovel);
                     }
                     firestoreCallback.onCallback(imoveis);
+
+                    if (task.getResult().size()!= 0){
+                        ultimoDocumentoLido = task.getResult().getDocuments().get(task.getResult().size()-1);
+                    }
 
                 }   else {
                     Log.d(TAG, "Erro ao receber documentos: ", task.getException());
