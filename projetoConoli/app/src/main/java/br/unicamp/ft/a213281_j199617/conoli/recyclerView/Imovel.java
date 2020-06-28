@@ -1,6 +1,26 @@
 package br.unicamp.ft.a213281_j199617.conoli.recyclerView;
 
+import android.content.Context;
+import android.util.Log;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+
+import java.util.ArrayList;
+import java.util.Objects;
+
 public class Imovel {
+
+    private static final String TAG = "Status consulta";
 
     private String usuario_dono, administracao, tipo_imovel, tipo_vaga, tipo_quarto, preco;
     private Boolean geladeira, maquina_de_lavar, fogao, microondas, televisao, wifi, garagem, mobilia,
@@ -30,6 +50,40 @@ public class Imovel {
         this.interfone = interfone;
         this.ar_condicionado = ar_condicionado;
         this.varanda = varanda;
+    }
+
+    public static Imovel[] getImoveis(final Context context){
+
+        FirebaseAuth mAuth = FirebaseAuth.getInstance(); //verificação do usuário corrente
+
+        // Accessar a cloud firestore a partir da classe que possuirá objetos no recyclerview
+        FirebaseFirestore db = FirebaseFirestore.getInstance(); // objeto Firestore
+
+        //Cria uma referencia a coleção de imóveis
+        CollectionReference referenciaImoveis = db.collection("imoveis");
+
+        //Criação da query para consultar os documentos do usuário atual
+        Query consultaPorUsuario = referenciaImoveis.whereEqualTo("user_owner", Objects.requireNonNull(mAuth.getCurrentUser()).getUid());
+
+        if (context != null){
+            final ArrayList<Imovel> imoveis = new ArrayList<>();
+            consultaPorUsuario.
+                    get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    if (task.isSuccessful()) {
+                        for (QueryDocumentSnapshot document : Objects.requireNonNull(task.getResult())) {
+                            Imovel imovel = document.toObject(Imovel.class);
+                            imoveis.add(imovel);
+                        }
+                    } else {
+                        Log.d(TAG, "Erro ao receber documentos: ", task.getException());
+                    }
+                }
+            });
+            return imoveis.toArray(new Imovel[imoveis.size()]);
+            }
+            return null;
     }
 
     //métodos usuario

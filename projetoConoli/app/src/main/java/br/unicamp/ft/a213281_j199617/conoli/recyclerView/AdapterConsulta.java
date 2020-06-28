@@ -30,54 +30,23 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class AdapterConsulta extends RecyclerView.Adapter {
 
-    private static final String TAG = "Status consulta";
-
     private ArrayList<Imovel> imoveis;
     public AdapterConsulta(ArrayList imoveis){
         this.imoveis = imoveis;
-    }
-
-    public void getImoveis(){
-        FirebaseAuth mAuth = FirebaseAuth.getInstance(); //verificação do usuário corrente
-
-        // Accessar a cloud firestore a partir da classe que possuirá objetos no recyclerview
-        FirebaseFirestore db = FirebaseFirestore.getInstance(); // objeto Firestore
-
-        //Cria uma referencia a coleção de imóveis
-        CollectionReference referenciaImoveis = db.collection("imoveis");
-
-        //Criação da query para consultar os documentos do usuário atual
-        Query consultaPorUsuario = referenciaImoveis.whereEqualTo("user_owner", Objects.requireNonNull(mAuth.getCurrentUser()).getUid());
-
-        consultaPorUsuario.
-                get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                if (task.isSuccessful()) {
-                    for (QueryDocumentSnapshot document : task.getResult()) {
-                        Imovel imovel = document.toObject(Imovel.class);
-                        imoveis.add(imovel);
-                    }
-                    notifyDataSetChanged();
-
-                } else {
-                    Log.d(TAG, "Erro ao receber documentos: ", task.getException());
-                }
-            }
-        });
+        notifyDataSetChanged();
     }
 
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.adapter_layout, parent, false);
-
-        return new MyFirstViewHolder(view);
+        View view = LayoutInflater.from(parent.getContext()).inflate(
+                R.layout.adapter_layout, parent, false);
+        return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder (@NonNull RecyclerView.ViewHolder holder, int position){
-        ((MyFirstViewHolder)holder).bind(imoveis.get(position));
+        ((ViewHolder)holder).bind(imoveis.get(position));
     }
 
     @Override
@@ -85,14 +54,15 @@ public class AdapterConsulta extends RecyclerView.Adapter {
         return imoveis.size();
     }
 
-    class MyFirstViewHolder extends RecyclerView.ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder {
         private TextView userId;
         private TextView admImovel;
         private TextView tipoImovel;
         private TextView tipoVaga;
 
-        public MyFirstViewHolder(@NonNull View itemView){
+        public ViewHolder(@NonNull View itemView){
             super (itemView);
+            Log.i("StatusViewHolder", "Definiu views");
             userId = itemView.findViewById(R.id.textView_userId);
             admImovel = itemView.findViewById(R.id.admImovel);
             tipoImovel = itemView.findViewById(R.id.tipoImovel);
@@ -104,6 +74,7 @@ public class AdapterConsulta extends RecyclerView.Adapter {
             admImovel.setText(imovel.getAdministracao());
             tipoImovel.setText(imovel.getTipo_imovel());
             tipoVaga.setText(imovel.getTipo_vaga());
+            notifyDataSetChanged();
         }
 
     }

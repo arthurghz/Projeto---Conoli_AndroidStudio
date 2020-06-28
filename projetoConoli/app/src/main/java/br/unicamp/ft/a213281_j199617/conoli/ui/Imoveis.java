@@ -62,8 +62,10 @@ public class Imoveis extends Fragment {
         adapter = new AdapterConsulta(
                 new ArrayList(Arrays.asList(Imovel.getImoveis(getContext())))
         );
+        Log.i("adapter", "criou a lista");
 
-        recyclerView.setAdapter (adapter);
+        recyclerView.setAdapter(adapter);
+        Log.i("adapter", "setou o adapter");
         return view;
     }
 
@@ -76,7 +78,6 @@ public class Imoveis extends Fragment {
                 startActivity(intent1);
             }
         });
-
     }
 
 }
