@@ -65,6 +65,7 @@ public class Imoveis extends Fragment {
         Log.i("adapter", "criou a lista");
 
         recyclerView.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
         Log.i("adapter", "setou o adapter");
         return view;
     }

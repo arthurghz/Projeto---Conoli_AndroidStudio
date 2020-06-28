@@ -33,7 +33,6 @@ public class AdapterConsulta extends RecyclerView.Adapter {
     private ArrayList<Imovel> imoveis;
     public AdapterConsulta(ArrayList imoveis){
         this.imoveis = imoveis;
-        notifyDataSetChanged();
     }
 
     @NonNull
@@ -62,7 +61,6 @@ public class AdapterConsulta extends RecyclerView.Adapter {
 
         public ViewHolder(@NonNull View itemView){
             super (itemView);
-            Log.i("StatusViewHolder", "Definiu views");
             userId = itemView.findViewById(R.id.textView_userId);
             admImovel = itemView.findViewById(R.id.admImovel);
             tipoImovel = itemView.findViewById(R.id.tipoImovel);
@@ -74,7 +72,6 @@ public class AdapterConsulta extends RecyclerView.Adapter {
             admImovel.setText(imovel.getAdministracao());
             tipoImovel.setText(imovel.getTipo_imovel());
             tipoVaga.setText(imovel.getTipo_vaga());
-            notifyDataSetChanged();
         }
 
     }
