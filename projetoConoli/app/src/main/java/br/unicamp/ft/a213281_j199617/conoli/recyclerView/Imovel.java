@@ -26,30 +26,9 @@ public class Imovel {
     private Boolean geladeira, maquina_de_lavar, fogao, microondas, televisao, wifi, garagem, mobilia,
     utensilio, interfone, ar_condicionado, varanda;
 
-    public Imovel(String usuario_dono, String administracao, String tipo_imovel,
-                  String tipo_vaga, String tipo_quarto, String preco, Boolean geladeira,
-                  Boolean maquina_de_lavar, Boolean fogao, Boolean microondas, Boolean televisao,
-                  Boolean wifi, Boolean garagem, Boolean mobilia, Boolean utensilio,
-                  Boolean interfone, Boolean ar_condicionado, Boolean varanda) {
-
-        this.usuario_dono = usuario_dono;
-        this.administracao = administracao;
-        this.tipo_imovel = tipo_imovel;
-        this.tipo_vaga = tipo_vaga;
-        this.tipo_quarto = tipo_quarto;
-        this.preco = preco;
-        this.geladeira = geladeira;
-        this.maquina_de_lavar = maquina_de_lavar;
-        this.fogao = fogao;
-        this.microondas = microondas;
-        this.televisao = televisao;
-        this.wifi = wifi;
-        this.garagem = garagem;
-        this.mobilia = mobilia;
-        this.utensilio = utensilio;
-        this.interfone = interfone;
-        this.ar_condicionado = ar_condicionado;
-        this.varanda = varanda;
+    public Imovel() {
+        // Não é definido um construtor pelo fato do POJO object que é retornado na conversão do
+        // documento (firebase) para o objeto (Imovel) não poder ter argumentos
     }
 
     public static Imovel[] getImoveis(final Context context){
@@ -63,7 +42,7 @@ public class Imovel {
         CollectionReference referenciaImoveis = db.collection("imoveis");
 
         //Criação da query para consultar os documentos do usuário atual
-        Query consultaPorUsuario = referenciaImoveis.whereEqualTo("user_owner", Objects.requireNonNull(mAuth.getCurrentUser()).getUid());
+        Query consultaPorUsuario = referenciaImoveis.whereEqualTo("usuario_dono", Objects.requireNonNull(mAuth.getCurrentUser()).getUid());
 
         if (context != null){
             final ArrayList<Imovel> imoveis = new ArrayList<>();
@@ -73,6 +52,7 @@ public class Imovel {
                 public void onComplete(@NonNull Task<QuerySnapshot> task) {
                     if (task.isSuccessful()) {
                         for (QueryDocumentSnapshot document : Objects.requireNonNull(task.getResult())) {
+                            Log.d(TAG, document.getId() + " => " + document.getData());
                             Imovel imovel = document.toObject(Imovel.class);
                             imoveis.add(imovel);
                         }
