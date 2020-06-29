@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Objeto do Firebase que verifica a instancia de usuário
         mAuth = FirebaseAuth.getInstance();
 
     }
@@ -42,12 +43,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void login(View View) {
 
+        //Se o usuário não consta no firebase, é direcionado para o login
         if (mAuth.getCurrentUser() == null){
             Intent intent1 = new Intent(getApplicationContext(), login.class);
             startActivity(intent1);
         }
-        else {
 
+        //Se a instancia de usuário já existe, é direcionado o dashboard
+        else {
             Intent navigation = new Intent(getApplicationContext(), navigationDrawer.class);
             startActivity(navigation);
         }
