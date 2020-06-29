@@ -2,7 +2,10 @@ package br.unicamp.ft.a213281_j199617.conoli;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,6 +22,8 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.firestore.FirebaseFirestore;
+
+import br.unicamp.ft.a213281_j199617.conoli.ui.Imoveis;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent1);
         }
         else {
+
             Intent navigation = new Intent(getApplicationContext(), navigationDrawer.class);
             startActivity(navigation);
         }

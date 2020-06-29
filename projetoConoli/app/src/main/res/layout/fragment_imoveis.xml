@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Imoveis"
+    tools:context=".recyclerView.Imovel"
     android:orientation="vertical">
 
     <LinearLayout
@@ -34,7 +34,14 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:scrollbars="vertical"
+        android:id="@+id/recycler_view"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingVertical="10dp"/>
+
+<!--    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
@@ -43,11 +50,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/imoveis_registrados"/>
+            android:text="@string/imoveis_registrados"/>-->
 
         <Button
             style="?android:attr/borderlessButtonStyle"
             android:id="@+id/batataCadastro"
+            android:layout_gravity="center"
             android:layout_width="185dp"
             android:layout_height="wrap_content"
             android:text="@string/botao_registrar_imovel"
@@ -55,7 +63,5 @@
             android:layout_margin="10dp"
             android:background="@drawable/style_botao_round_roxo"
             android:textAllCaps="false"/>
-
-    </LinearLayout>
 
 </LinearLayout>
